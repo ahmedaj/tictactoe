@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />        
+        <title> Tic Tac Toe Test </title> 
+        <style>
+            .t3-row{
+                overflow: hidden;
+            }
+            .t3-cell{
+                width:100px;
+                height: 100px;
+                background-color: #eee;
+                float:left;
+                border: 1px solid black;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            .t3-machine{
+                background-image: url('o.png')
+            }
+            
+            .t3-player{
+                background-image: url('x.png')
+            }
+            
+            .t3-solution{
+                border-color:#00cc00;
+                border-radius: 10%;
+            }
+            
+        </style>
+
+    </head>
+
+    
+    <body>
+        <h1> Play now </h1>
+        <div class="some_class" id="the-game-block">
+            
+        </div>
+        <script type="text/javascript" src="jquery-2.2.0.min.js"></script>
+        <script type="text/javascript" src="ticktactoe.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                new TicTacToe('#the-game-block',4).start();
+            }) 
+         </script>        
+    </body>
+
+    
+</html>
